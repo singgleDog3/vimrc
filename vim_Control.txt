@@ -1,0 +1,82 @@
+# open the file at the bottom windows
+:sv <filename>
+
+#open the file at the right windows
+:vs <filename>
+
+@.vimrc
+# add this in .vimrc
+set splitbelow
+set splitright
+@.vimrc
+
+
+@.vimrc
+# move on the different windows 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-k> <C-W><C-k>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+@.vimrc
+
+
+# open the code fold 
+
+@.vimrc
+"enable code fold 
+" set foldmethod=indent
+set foldlevel=99
+" Enable foldinf with the spacebar
+nnoremap <space> za
+@.vimrc
+
+
+@.vimrc
+let g:SimpleFold_docstring_preview=1
+@.vimrc
+
+@.vimrc
+au BufNewFile, BufRead *.py
+\ set tabstop=4
+\ set softtabstop=4
+\ set textwidth=79
+\ expandtab
+\ autoindent
+\ fileformat=unix
+@.vimrc
+
+@.vimrc
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g :YcmCompleter GoToDefineElseDeclaration<CR>
+@.vimrc
+
+@.vimrc
+let python_highlight_all=1
+syntax on
+@.vimrc
+
+
+
+@.vimrc
+if has('gui_running')
+	set background=dark
+	colorscheme solarized
+else
+	colorscheme Zenburn
+endif
+
+call togglebg#map("<F5>")
+@.vimrc
+
+
+
+@Plugin 
+Plugin 'tmhedberg/SimplyFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Lokaltog/powerline',{'rtp': 'powerline/bindings/vim/'}
+
