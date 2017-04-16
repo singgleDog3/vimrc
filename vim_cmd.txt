@@ -1,0 +1,40 @@
+# move cmd 
+h -> move left
+l -> move right
+j -> move down
+k -> move up
+w -> move to next word
+b -> move to last word
+
+# join insert mode 
+i -> Edit on the cursor
+I -> Edit at the begin of the line
+A -> Edit at the end of the line 
+a -> Edit behind cursor
+o -> Insert a new line behind
+O -> Insert a new line fornt
+cw -> Replace the word from cursor place to end 
+
+
+# quit cmd
+:q!  -> quit,note save 
+:q!  -> quit.
+:wq! -> quit and save
+:w<file_dir> -> save as 
+:saveas <file_dir>  -> save as 
+:x   -> save and quit
+
+
+# quit and save   on the normal mode
+shift + zz
+
+# delete cmd 
+x    -> delete the char on cursor
+X    -> delete the char before cursor
+dd   -> delete a line 
+dw   -> delete a word
+d$/D -> delete form cursor to line end
+d^   -> delete form line begin to cursor
+dG   -> delete form cursor to file end
+d1G  -> delete form file begin to cursor
+

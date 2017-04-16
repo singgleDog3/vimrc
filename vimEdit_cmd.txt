@@ -1,0 +1,28 @@
+# repetition cmd 
+.   -> repetition last cmd
+
+# skip cmd 
+nG     -> skip to n line 
+gg     -> skip the first line 
+G      -> skip the end line 
+w      -> begin next word
+e      -> end next word
+b      -> begin last word
+ge     -> end last word
+0/^    -> at the begin of this line
+$      -> at the end of this line 
+f<word> -> search backwords and skip 
+F<word> -> search forward and skip
+
+# copy and paste
+yy     ->  copy the line (3yy  copy 3 line)
+y^     ->  copy from line begin to cursor
+y$     ->  copy from cursor to line end
+yw     ->  copy a word
+y2w    ->  copy two word
+yG     ->  copy from cursor to file end
+g1G    ->  copy from file begin to cursor
+
+p(lower)  -> copy behind cursor
+P(upper)  -> copy previous cursor
+
