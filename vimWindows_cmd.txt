@@ -1,0 +1,44 @@
+# file edit and skip
+:e 3.txt	-> open new file 
+:e#			-> open last file
+:ls			-> list the edit file 
+:b 2.txt 	-> join the file and edit
+:f 			-> list the editing file 
+:f new.txt 	-> change the editing file's name
+
+
+# visual cmd (in normal mode)
+v			-> join visual mode
+shift + v 	-> choose a whole line 
+ctrl + v 	-> choose a rectangle area
+d			-> delete
+y			-> copy
+
+
+# more windows in vim 
+:sp filename		-> open file with new windows (standard)
+:vsp filename 		-> open file with new windows (vertical)
+:ctrl-w s 			-> standard split
+:ctrl-w v			-> vertical split
+:ctrl-w q			-> quit choose windows
+:ctrl-w o 			-> hide all windows but this
+:ctrl-w j			-> move down 
+:ctrl-w k 			-> move up
+:ctrl-w h 			-> move left
+:ctrl-w l 			-> move right
+:ctrl-w -			-> decrease the windows's height
+:ctrl-w +			-> increscent the windows's height
+
+# get setting 
+:set/se 			-> show all changing setting 
+:set all 			-> show all setting 
+:set option?		-> show option setting
+:set nooption		-> cancel setting 
+
+# setting function
+:set autoindent(ai)		-> auto indent
+:set autowrite(aw)		-> auto save 
+:set background=dark	-> background
+:set backup(bk)			-> auto backup
+:set cindent(cin)		-> c language style
+
